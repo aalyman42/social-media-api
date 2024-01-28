@@ -13,14 +13,14 @@ const {
 //
 // thought routes
 //
-// router.route("/").get(getThoughts).post(addThought);
-// //
-// //
-// router
-//   .route("/:id")
-//   .get(getOneThought)
-//   .put(updateThought)
-//   .delete(deleteThought);
+router.route("/").get(getThoughts).post(addThought);
+//
+//
+router
+  .route("/:id")
+  .get(getOneThought)
+  .put(updateThought)
+  .delete(deleteThought);
 // //
 // // reation routes
 // //
