@@ -20,7 +20,7 @@ module.exports = {
     try {
       const noReaction = await Thoughts.findOneAndUpdate(
         { _id: req.params.thoughtId },
-        { $pull: { reactions: { _id: req.body._id } } },
+        { $pull: { reactions: { reactionId: req.body._id } } },
         { new: true }
       );
       res.json(noFriend);
