@@ -3,7 +3,7 @@ const reactionSchema = require("./Reactions");
 
 const thoughtSchema = new Schema({
   thoughtText: { type: String, required: true, minLength: 1, maxLength: 280 },
-  createdAt: { type: Date, default: { get: dateSet } },
+  createdAt: { type: Date, get: dateSet },
   username: { type: String, required: true },
   reactions: [reactionSchema],
 });
